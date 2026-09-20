@@ -597,12 +597,16 @@
             const itemSelect = document.getElementById('itemType');
             const itemName = itemSelect.options[itemSelect.selectedIndex].getAttribute('data-name');
             const total = document.getElementById('totalEstimate').innerText;
-            const customText = document.getElementById('customText').value || "None";
+            const customText = document.getElementById('customText').value.trim();
 
-            const text = `Hi just.somecreations! 👋\nI'd like to place a custom order estimate:\n\n✨ Item: ${itemName}\n✏️ Custom Text: ${customText}\n💰 Estimated Total: ${total}\n\nPlease confirm availability!`;
+            let message = `Hi Just.SomeCreations! 👋 I'd like to place an order for:\n\n📌 Item: ${itemName}\n💰 Estimated Price: ${total}`;
+            if (customText) {
+                message += `\n✍️ Custom Name/Text: "${customText}"`;
+            }
 
-            window.location.href = `https://wa.me/919096837269?text=${encodeURIComponent(text)}`;
+            window.open(`https://wa.me/919096837269?text=${encodeURIComponent(message)}`, '_blank');
         }
+    </script>
     </script>
 </body>
 </html>
