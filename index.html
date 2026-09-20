@@ -183,7 +183,7 @@
                         <p class="text-stone-500 text-xs mt-1 line-clamp-2">Everlasting handcrafted bouquet featuring colorful plush pipe cleaner roses, daisies & lavenders in luxury paper wrap.</p>
                     </div>
                     <div class="mt-4 flex items-center justify-between pt-3 border-t border-stone-100">
-                        <span class="text-base font-bold text-stone-900">₹150 Onward</span>
+                        <span class="text-base font-bold text-stone-900">₹550 Onward</span>
                         <button onclick="openModal(5)" class="p-2 rounded-full bg-stone-100 hover:bg-brand-clay hover:text-white transition-colors text-stone-700">
                             <i data-lucide="eye" class="w-4 h-4"></i>
                         </button>
@@ -240,7 +240,7 @@
                         <p class="text-stone-500 text-xs mt-1 line-clamp-2">Pristine white resin thali with gold leaf scalloped rims, embedded metallic leaves, and two built-in brass bowls for kumkum & chawal.</p>
                     </div>
                     <div class="mt-4 flex items-center justify-between pt-3 border-t border-stone-100">
-                        <span class="text-base font-bold text-stone-900">₹499 (6 inches)</span>
+                        <span class="text-base font-bold text-stone-900">₹150 (6 inches)</span>
                         <button onclick="openModal(8)" class="p-2 rounded-full bg-stone-100 hover:bg-brand-clay hover:text-white transition-colors text-stone-700">
                             <i data-lucide="eye" class="w-4 h-4"></i>
                         </button>
@@ -302,13 +302,13 @@
                     <div>
                         <label class="block text-xs uppercase tracking-wider font-semibold text-stone-300 mb-2">1. Select Creation Type</label>
                         <select id="itemType" class="w-full bg-stone-900 border border-stone-700 rounded-xl px-4 py-3 text-stone-200 focus:outline-none focus:border-brand-clay">
-                            <option value="299" data-name="Resin Bookmark">Resin Bookmark (Preserved Petals) — ₹299</option>
-                            <option value="1499" data-name="Custom Nameplate">Custom Resin Nameplate — ₹1,499</option>
-                            <option value="699" data-name="Pipe Cleaner Bouquet">Pipe Cleaner Floral Bouquet — ₹699</option>
-                            <option value="199" data-name="Personalized Rakhi">Resin Personalized Rakhi — ₹199</option>
-                            <option value="899" data-name="Seashell Photo Frame">Ocean Resin Photo Frame — ₹899</option>
-                            <option value="999" data-name="Decorative Pooja Thali">Resin Pooja Thali — ₹999</option>
-                            <option value="249" data-name="Daisy Bag Charm">Embedded Floral Keychain — ₹249</option>
+                            <option value="150" data-name="Resin Bookmark">Resin Bookmark (Preserved Petals) — ₹150</option>
+                            <option value="1500" data-name="Custom Nameplate">Custom Resin Nameplate — ₹1,500</option>
+                            <option value="150" data-name="Pipe Cleaner Bouquet">Pipe Cleaner Floral Bouquet — ₹550</option>
+                            <option value="70" data-name="Personalized Rakhi">Resin Personalized Rakhi — ₹70</option>
+                            <option value="399" data-name="Seashell Photo Frame">Ocean Resin Photo Frame — ₹399</option>
+                            <option value="150" data-name="Decorative Pooja Thali">Resin Pooja Thali — ₹150</option>
+                            <option value="120" data-name="Daisy Bag Charm">Embedded Floral Keychain — ₹120</option>
                         </select>
                     </div>
 
@@ -365,6 +365,7 @@
     <section id="about" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid md:grid-cols-2 gap-12 items-center">
             <div class="space-y-6">
+                <p class="text-stone-600 leading-relaxed">Extra charges for shipping.</p>
                 <span class="font-script text-2xl text-brand-clay">Our Story & Craft</span>
                 <h2 class="font-serif text-3xl sm:text-4xl font-bold text-stone-900 leading-tight">Every Piece Tells a Heartfelt Story.</h2>
                 <p class="text-stone-600 leading-relaxed">
@@ -434,16 +435,16 @@
         lucide.createIcons();
 
         const products = {
-            1: { title: "Lotus Pipe Cleaner Wall Hanging", price: "₹499", category: "Pipe Cleaner Art", desc: "Vibrant red and pink handcrafted lotus flowers made of soft pipe cleaners with fluffy yellow centers, hung on a decorative wooden display string.", spec: "Material: Plush Pipe Cleaners, Wood | Size: 12 inches", image: "WhatsApp Image 2026-09-19 at 15.14.10 (1).jpeg" },
-            2: { title: "Customized Floral Resin Bookmark", price: "₹299", category: "Resin Art", desc: "Handcrafted crystal clear bookmark with real embedded red rose petal, golden foil leaf, and customized vinyl typography (e.g. 'Prachi').", spec: "Material: UV High-Gloss Resin | Size: 14cm x 3cm", image: "WhatsApp Image 2026-09-19 at 13.29.44 (1).jpeg" },
-            3: { title: "Handmade Resin Personalized Rakhi", price: "₹199", category: "Festive Special", desc: "Custom resin oval centerpiece with gold foil flakes, real mini dried blooms, set on a multi-strand pearl bead band.", spec: "Material: Resin, Pearls, Gold Foil", image: "WhatsApp Image 2026-09-19 at 13.29.45.jpeg" },
-            4: { title: "Custom Floral Resin Nameplate", price: "₹1,499", category: "Home Decor", desc: "Personalized wooden base nameplate with purple-orange gradient resin art, real preserved blossoms, and 3D metallic gold text.", spec: "Size: 12 x 6 inches | Weather resistant finish", image: "WhatsApp Image 2026-09-19 at 13.29.46.jpeg" },
-            5: { title: "Pipe Cleaner Floral Bouquet", price: "₹699", category: "Pipe Cleaner Art", desc: "Everlasting handcrafted flower bouquet wrapped in premium white floral paper with satin bow. Never fades!", spec: "Includes 5 custom blooms (Roses, Daisies, Lavender)", image: "WhatsApp Image 2026-09-19 at 13.29.47.jpeg" },
-            6: { title: "Chic Single Pipe Cleaner Tulip", price: "₹189", category: "Single Bloom", desc: "A rich velvet dark red pipe cleaner tulip bloom wrapped in chic black matte cone packaging with gold metallic rim border.", spec: "Height: 25cm", image: "WhatsApp Image 2026-09-19 at 13.29.48.jpeg" },
-            7: { title: "Ocean Seashell Resin Photo Frame", price: "₹899", category: "Preservation Frame", desc: "Scalloped ocean blue resin photo frame embedded with real seashells and pearls, displayed on an wooden easel stand.", spec: "Fits 4x4 inch photograph", image: "WhatsApp Image 2026-09-19 at 13.29.49.jpeg" },
-            8: { title: "Resin Decorative Pooja Thali", price: "₹999", category: "Festive Special", desc: "White resin ritual plate with gold foil scalloped border, embedded metallic leaves, and two built-in brass bowls for kumkum & chawal.", spec: "Diameter: 8 inches", image: "WhatsApp Image 2026-09-19 at 13.29.49 (1).jpeg" },
-            9: { title: "Floral Resin Pearl Bracelet", price: "₹349", category: "Jewelry", desc: "Clear floral resin medallion featuring a preserved real pink flower with double pearl strand bracelet band.", spec: "Adjustable size strap", image: "WhatsApp Image 2026-09-19 at 13.29.49 (2).jpeg" },
-            10: { title: "Embedded Yellow Daisy Bag Charm", price: "₹249", category: "Keychains", desc: "Circular high-shine clear resin keychain with an embedded real yellow daisy flower, attached to a luxury gold keyring.", spec: "Diameter: 4.5cm", image: "WhatsApp Image 2026-09-19 at 13.29.50.jpeg" }
+            1: { title: "Lotus Pipe Cleaner Wall Hanging", price: "₹150", category: "Pipe Cleaner Art", desc: "Vibrant red and pink handcrafted lotus flowers made of soft pipe cleaners with fluffy yellow centers, hung on a decorative wooden display string.", spec: "Material: Plush Pipe Cleaners, Wood | Size: 12 inches", image: "WhatsApp Image 2026-09-19 at 15.14.10 (1).jpeg" },
+            2: { title: "Customized Floral Resin Bookmark", price: "₹150", category: "Resin Art", desc: "Handcrafted crystal clear bookmark with real embedded red rose petal, golden foil leaf, and customized vinyl typography (e.g. 'Prachi').", spec: "Material: UV High-Gloss Resin | Size: 14cm x 3cm", image: "WhatsApp Image 2026-09-19 at 13.29.44 (1).jpeg" },
+            3: { title: "Handmade Resin Personalized Rakhi", price: "₹50", category: "Festive Special", desc: "Custom resin oval centerpiece with gold foil flakes, real mini dried blooms, set on a multi-strand pearl bead band.", spec: "Material: Resin, Pearls, Gold Foil", image: "WhatsApp Image 2026-09-19 at 13.29.45.jpeg" },
+            4: { title: "Custom Floral Resin Nameplate", price: "₹1,500", category: "Home Decor", desc: "Personalized wooden base nameplate with purple-orange gradient resin art, real preserved blossoms, and 3D metallic gold text.", spec: "Size: 12 x 6 inches | Weather resistant finish", image: "WhatsApp Image 2026-09-19 at 13.29.46.jpeg" },
+            5: { title: "Pipe Cleaner Floral Bouquet", price: "₹550", category: "Pipe Cleaner Art", desc: "Everlasting handcrafted flower bouquet wrapped in premium white floral paper with satin bow. Never fades!", spec: "Includes 5 custom blooms (Roses, Daisies, Lavender)", image: "WhatsApp Image 2026-09-19 at 13.29.47.jpeg" },
+            6: { title: "Chic Single Pipe Cleaner Tulip", price: "₹150", category: "Single Bloom", desc: "A rich velvet dark red pipe cleaner tulip bloom wrapped in chic black matte cone packaging with gold metallic rim border.", spec: "Height: 25cm", image: "WhatsApp Image 2026-09-19 at 13.29.48.jpeg" },
+            7: { title: "Ocean Seashell Resin Photo Frame", price: "₹399", category: "Preservation Frame", desc: "Scalloped ocean blue resin photo frame embedded with real seashells and pearls, displayed on an wooden easel stand.", spec: "Fits 4x4 inch photograph", image: "WhatsApp Image 2026-09-19 at 13.29.49.jpeg" },
+            8: { title: "Resin Decorative Pooja Thali", price: "₹499", category: "Festive Special", desc: "White resin ritual plate with gold foil scalloped border, embedded metallic leaves, and two built-in brass bowls for kumkum & chawal.", spec: "Diameter: 8 inches", image: "WhatsApp Image 2026-09-19 at 13.29.49 (1).jpeg" },
+            9: { title: "Floral Resin Pearl Bracelet", price: "₹180", category: "Jewelry", desc: "Clear floral resin medallion featuring a preserved real pink flower with double pearl strand bracelet band.", spec: "Adjustable size strap", image: "WhatsApp Image 2026-09-19 at 13.29.49 (2).jpeg" },
+            10: { title: "Embedded Yellow Daisy Bag Charm", price: "₹120", category: "Keychains", desc: "Circular high-shine clear resin keychain with an embedded real yellow daisy flower, attached to a luxury gold keyring.", spec: "Diameter: 4.5cm", image: "WhatsApp Image 2026-09-19 at 13.29.50.jpeg" }
         };
 
         const WHATSAPP_NUMBER = "919096837269";
