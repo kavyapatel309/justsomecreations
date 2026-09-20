@@ -1,31 +1,36 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 <head>
-    <meta name="google-site-verification" content="Xtf4AcC3YKsDkGF3NUd2dbNK-6yvnSfKRFm49rlwMS8" />
-    <meta name="google-site-verification" content="58hR64DohXpLPkcmV7lrTyn3S5lqevW9aRd9SlygL8M" />
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="xXmwDIgQn6xbuGR5ASwtmfVSdcGeNa1QJ4elLBu_qHA" />
     <title>just.somecreations — Handcrafted Resin & Custom Arts</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mrs+Saint+Delafield&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/lucide@latest"></script>
-</style>
+    <link rel="icon" type="image/png" sizes="32x32" href="WhatsApp Image 2026-09-19 at 15.14.10 (1).png">
+    <style>
+        @keyframes spinRing { to { transform: rotate(360deg); } }
+    </style>
 </head>
 <body class="bg-brand-cream text-stone-800 font-sans antialiased custom-scrollbar">
 
     <!-- Header / Nav -->
     <header class="bg-white/90 backdrop-blur-md border-b border-stone-200/60 shadow-sm">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-            <!-- Brand Logo -->
-<div class="relative w-72 h-72 sm:w-80 sm:h-80 flex items-center justify-center">
-    <div class="absolute inset-0 rounded-full" style="background: conic-gradient(from 0deg, #D4AF37, #F4E4BC, #D4AF37, #F4E4BC, #D4AF37); animation: spin 8s linear infinite; padding: 4px;"></div>
-    <div class="absolute inset-[6px] rounded-full bg-[#F2EBE1] flex items-center justify-center" style="box-shadow: inset 0 2px 8px rgba(0,0,0,0.08);">
-        <img src="WhatsApp Image 2026-09-19 at 15.14.10 (1).png" alt="just.somecreations logo" class="w-[85%] h-[85%] object-cover rounded-full" />
-    </div>
-</div>
-<style>@keyframes spin{to{transform:rotate(360deg)}}</style>
+            <!-- Brand Logo (text only, image logo lives in About section) -->
+            <a href="#" class="flex items-center gap-3 group">
+                 <div class="flex justify-center">
+                <div class="w-72 h-72 sm:w-80 sm:h-80 rounded-full bg-[#F2EBE1] p-6 shadow-2xl border-4 border-white ring-1 ring-stone-200 relative group flex items-center justify-center">
+                    <img src="WhatsApp Image 2026-09-19 at 15.14.10 (1).png" alt="just.somecreations logo" class="w-full h-full object-cover rounded-full" />
+                </div>
+                <div>
+                    <span class="block text-3xl text-stone-900 leading-none" style="font-family: 'Mrs Saint Delafield', cursive;">just.</span>
+                    <span class="block font-sans text-[10px] tracking-widest text-stone-500 uppercase font-bold">somecreations</span>
+                </div>
+            </a>
 
             <!-- Nav Links -->
             <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-stone-600">
@@ -37,7 +42,7 @@
 
             <!-- Actions -->
             <div class="flex items-center gap-3">
-                <a href="https://instagram.com" target="_blank" class="p-2 rounded-full hover:bg-stone-100 text-stone-700 transition-colors" title="Instagram Profile">
+                <a href="https://instagram.com/just.somecreations" target="_blank" class="p-2 rounded-full hover:bg-stone-100 text-stone-700 transition-colors" title="Instagram Profile">
                     <i data-lucide="instagram" class="w-5 h-5"></i>
                 </a>
                 <a href="#customizer" class="hidden sm:inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brand-clay text-white text-sm font-medium hover:bg-stone-800 transition-all shadow-md">
@@ -49,12 +54,6 @@
 
     <!-- Hero Section -->
     <section class="hero-bg py-16 lg:py-24 border-b border-stone-200/80 relative overflow-hidden">
-<div class="absolute inset-0 pointer-events-none overflow-hidden">
-    <span class="float-sparkle" style="left:8%; animation-delay:0s;">✨</span>
-    <span class="float-sparkle" style="left:22%; animation-delay:2s;">🌸</span>
-    <span class="float-sparkle" style="left:78%; animation-delay:1s;">✨</span>
-    <span class="float-sparkle" style="left:90%; animation-delay:3s;">🌼</span>
-</div>   
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div class="grid lg:grid-cols-2 gap-12 items-center">
                 <div class="space-y-6 text-center lg:text-left">
@@ -76,14 +75,16 @@
                         </a>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
 
-               
     <!-- Catalog Section -->
     <section id="gallery" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center max-w-2xl mx-auto mb-12">
             <h2 class="font-serif text-3xl sm:text-4xl font-bold text-stone-900">Our Signature Collections</h2>
             <p class="text-stone-600 mt-2">Explore our handpicked range of handcrafted floral gifts, resin keepsakes, and personalized home decor.</p>
-            
+
             <!-- Category Filter -->
             <div class="flex flex-wrap justify-center gap-2 mt-8" id="filterContainer">
                 <button onclick="filterCatalog('all')" class="filter-btn active px-5 py-2 rounded-full text-sm font-medium bg-stone-900 text-white transition-all shadow-sm">All Creations (10)</button>
@@ -95,7 +96,6 @@
 
         <!-- Product Grid -->
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8" id="productGrid">
-            <!-- Product 1 -->
             <div class="product-card resin bg-white rounded-2xl overflow-hidden border border-stone-200/80 shadow-md hover:shadow-xl transition-all duration-300 group flex flex-col">
                 <div class="relative aspect-square bg-stone-100 overflow-hidden cursor-pointer" onclick="openModal(1)">
                     <img src="WhatsApp Image 2026-09-19 at 13.29.44 (1).jpeg" alt="Lotus Pipe Cleaner Wall Hanging" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
@@ -115,7 +115,6 @@
                 </div>
             </div>
 
-            <!-- Product 2 -->
             <div class="product-card resin bg-white rounded-2xl overflow-hidden border border-stone-200/80 shadow-md hover:shadow-xl transition-all duration-300 group flex flex-col">
                 <div class="relative aspect-square bg-stone-100 overflow-hidden cursor-pointer" onclick="openModal(2)">
                     <img src="WhatsApp Image 2026-09-19 at 13.29.44 (2).jpeg" alt="Customized Floral Resin Bookmark" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
@@ -135,7 +134,6 @@
                 </div>
             </div>
 
-            <!-- Product 3 -->
             <div class="product-card festive bg-white rounded-2xl overflow-hidden border border-stone-200/80 shadow-md hover:shadow-xl transition-all duration-300 group flex flex-col">
                 <div class="relative aspect-square bg-stone-100 overflow-hidden cursor-pointer" onclick="openModal(3)">
                     <img src="WhatsApp Image 2026-09-19 at 13.29.45.jpeg" alt="Handmade Resin Personalized Rakhi" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
@@ -155,7 +153,6 @@
                 </div>
             </div>
 
-            <!-- Product 4 -->
             <div class="product-card resin bg-white rounded-2xl overflow-hidden border border-stone-200/80 shadow-md hover:shadow-xl transition-all duration-300 group flex flex-col">
                 <div class="relative aspect-square bg-stone-100 overflow-hidden cursor-pointer" onclick="openModal(4)">
                     <img src="WhatsApp Image 2026-09-19 at 13.29.46.jpeg" alt="Custom Floral Resin Nameplate" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
@@ -175,7 +172,6 @@
                 </div>
             </div>
 
-            <!-- Product 5 -->
             <div class="product-card pipe bg-white rounded-2xl overflow-hidden border border-stone-200/80 shadow-md hover:shadow-xl transition-all duration-300 group flex flex-col">
                 <div class="relative aspect-square bg-stone-100 overflow-hidden cursor-pointer" onclick="openModal(5)">
                     <img src="WhatsApp Image 2026-09-19 at 13.29.47.jpeg" alt="Pipe Cleaner Floral Bouquet" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
@@ -195,7 +191,6 @@
                 </div>
             </div>
 
-            <!-- Product 6 -->
             <div class="product-card pipe bg-white rounded-2xl overflow-hidden border border-stone-200/80 shadow-md hover:shadow-xl transition-all duration-300 group flex flex-col">
                 <div class="relative aspect-square bg-stone-100 overflow-hidden cursor-pointer" onclick="openModal(6)">
                     <img src="WhatsApp Image 2026-09-19 at 13.29.48.jpeg" alt="Chic Single Pipe Cleaner Tulip" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
@@ -215,7 +210,6 @@
                 </div>
             </div>
 
-            <!-- Product 7 -->
             <div class="product-card resin bg-white rounded-2xl overflow-hidden border border-stone-200/80 shadow-md hover:shadow-xl transition-all duration-300 group flex flex-col">
                 <div class="relative aspect-square bg-stone-100 overflow-hidden cursor-pointer" onclick="openModal(7)">
                     <img src="WhatsApp Image 2026-09-19 at 13.29.49 (1).jpeg" alt="Ocean Seashell Resin Photo Frame" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
@@ -235,7 +229,6 @@
                 </div>
             </div>
 
-            <!-- Product 8 -->
             <div class="product-card festive bg-white rounded-2xl overflow-hidden border border-stone-200/80 shadow-md hover:shadow-xl transition-all duration-300 group flex flex-col">
                 <div class="relative aspect-square bg-stone-100 overflow-hidden cursor-pointer" onclick="openModal(8)">
                     <img src="WhatsApp Image 2026-09-19 at 13.29.49 (2).jpeg" alt="Resin Decorative Pooja Thali" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
@@ -244,7 +237,7 @@
                 <div class="p-5 flex-1 flex flex-col justify-between">
                     <div>
                         <h3 class="font-serif font-bold text-stone-900 text-lg group-hover:text-brand-clay transition-colors">Resin Decorative Pooja Thali</h3>
-                        <p class="text-stone-500 text-xs mt-1 line-clamp-2">Pristine white resin thali with gold leaf scalloped rims, embedded golden leaves, and built-in brass bowls for kumkum & chawal.</p>
+                        <p class="text-stone-500 text-xs mt-1 line-clamp-2">Pristine white resin thali with gold leaf scalloped rims, embedded metallic leaves, and two built-in brass bowls for kumkum & chawal.</p>
                     </div>
                     <div class="mt-4 flex items-center justify-between pt-3 border-t border-stone-100">
                         <span class="text-base font-bold text-stone-900">₹999</span>
@@ -255,7 +248,6 @@
                 </div>
             </div>
 
-            <!-- Product 9 -->
             <div class="product-card resin bg-white rounded-2xl overflow-hidden border border-stone-200/80 shadow-md hover:shadow-xl transition-all duration-300 group flex flex-col">
                 <div class="relative aspect-square bg-stone-100 overflow-hidden cursor-pointer" onclick="openModal(9)">
                     <img src="WhatsApp Image 2026-09-19 at 13.29.50.jpeg" alt="Floral Resin Pearl Bracelet" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
@@ -275,7 +267,6 @@
                 </div>
             </div>
 
-            <!-- Product 10 -->
             <div class="product-card resin bg-white rounded-2xl overflow-hidden border border-stone-200/80 shadow-md hover:shadow-xl transition-all duration-300 group flex flex-col">
                 <div class="relative aspect-square bg-stone-100 overflow-hidden cursor-pointer" onclick="openModal(10)">
                     <img src="WhatsApp Image 2026-09-19 at 13.29.49.jpeg" alt="Embedded Yellow Daisy Bag Charm" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
@@ -284,7 +275,7 @@
                 <div class="p-5 flex-1 flex flex-col justify-between">
                     <div>
                         <h3 class="font-serif font-bold text-stone-900 text-lg group-hover:text-brand-clay transition-colors">Embedded Yellow Daisy Bag Charm</h3>
-                        <p class="text-stone-500 text-xs mt-1 line-clamp-2">Circular clear resin keychain featuring a real preserved yellow daisy flower with gold ring hardware.</p>
+                        <p class="text-stone-500 text-xs mt-1 line-clamp-2">Circular high-shine clear resin keychain with an embedded real yellow daisy flower, attached to a luxury gold keyring.</p>
                     </div>
                     <div class="mt-4 flex items-center justify-between pt-3 border-t border-stone-100">
                         <span class="text-base font-bold text-stone-900">₹249</span>
@@ -308,7 +299,6 @@
 
             <div class="bg-stone-800/90 rounded-3xl p-6 sm:p-10 border border-stone-700/60 shadow-2xl backdrop-blur-md">
                 <form id="quoteForm" class="space-y-6" onchange="calculateEstimate()">
-                    <!-- Product Category Selection -->
                     <div>
                         <label class="block text-xs uppercase tracking-wider font-semibold text-stone-300 mb-2">1. Select Creation Type</label>
                         <select id="itemType" class="w-full bg-stone-900 border border-stone-700 rounded-xl px-4 py-3 text-stone-200 focus:outline-none focus:border-brand-clay">
@@ -322,7 +312,6 @@
                         </select>
                     </div>
 
-                    <!-- Custom Add-ons -->
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                         <div>
                             <label class="block text-xs uppercase tracking-wider font-semibold text-stone-300 mb-2">2. Personalization Options</label>
@@ -353,13 +342,11 @@
                         </div>
                     </div>
 
-                    <!-- Custom Text Input -->
                     <div>
                         <label class="block text-xs uppercase tracking-wider font-semibold text-stone-300 mb-1">4. Text or Name to Inscribe</label>
                         <input type="text" id="customText" placeholder="e.g., 'Prachi' or 'The Sharma Family'" class="w-full bg-stone-900 border border-stone-700 rounded-xl px-4 py-3 text-stone-200 focus:outline-none focus:border-brand-clay text-sm">
                     </div>
 
-                    <!-- Total & Order Action -->
                     <div class="pt-6 border-t border-stone-700 flex flex-col sm:flex-row items-center justify-between gap-4">
                         <div>
                             <span class="text-xs text-stone-400 block uppercase tracking-wider">Estimated Total</span>
@@ -398,9 +385,10 @@
             </div>
 
             <!-- Brand Logo Emblem Decorative Presentation -->
-            <div class="flex justify-center">
+                     <div class="flex justify-center">
                 <div class="w-72 h-72 sm:w-80 sm:h-80 rounded-full bg-[#F2EBE1] p-6 shadow-2xl border-4 border-white ring-1 ring-stone-200 relative group flex items-center justify-center">
                     <img src="WhatsApp Image 2026-09-19 at 15.14.10 (1).png" alt="just.somecreations logo" class="w-full h-full object-cover rounded-full" />
+                </div>
                 </div>
             </div>
         </div>
@@ -410,11 +398,11 @@
     <footer id="contact" class="bg-stone-900 text-stone-400 border-t border-stone-800 py-12">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
             <div class="flex items-center gap-3">
-                <div class="w-10 h-10 rounded-full bg-[#F2EBE1] flex items-center justify-center text-stone-900 font-script font-bold text-xl">
+                <div class="w-10 h-10 rounded-full bg-[#F2EBE1] flex items-center justify-center text-stone-900 font-bold text-xl" style="font-family: 'Mrs Saint Delafield', cursive;">
                     j.
                 </div>
                 <div>
-                    <span class="block text-white font-script text-xl leading-none">just.somecreations</span>
+                    <span class="block text-white text-xl leading-none" style="font-family: 'Mrs Saint Delafield', cursive;">just.somecreations</span>
                     <span class="text-xs text-stone-500">Custom Resin & Handmade Floral Gifts</span>
                 </div>
             </div>
@@ -422,12 +410,12 @@
             <p class="text-xs text-stone-500">© 2026 just.somecreations. All rights reserved.</p>
 
             <div class="flex gap-4">
-                <a href="https://instagram.com" target="_blank" class="p-2 rounded-full bg-stone-800 hover:bg-stone-700 text-stone-300 transition-colors">
+                <a href="https://instagram.com/just.somecreations" target="_blank" class="p-2 rounded-full bg-stone-800 hover:bg-stone-700 text-stone-300 transition-colors">
                     <i data-lucide="instagram" class="w-5 h-5"></i>
                 </a>
-                        <a href="https://wa.me/919096837269?text=`Hi Just.SomeCreations! 👋 I'd like to place an order for:\n\n📌 Item: ${itemName}\n💰 Estimated Price: ${total}`;" target="_blank" class="px-6 py-3.5 rounded-full bg-emerald-600 text-white font-medium hover:bg-emerald-700 transition-all shadow-lg flex items-center gap-2">
-                            <i data-lucide="message-circle" class="w-4 h-4"></i> Chat on WhatsApp
-                        </a>
+                <a href="https://wa.me/919096837269" target="_blank" class="p-2 rounded-full bg-stone-800 hover:bg-stone-700 text-stone-300 transition-colors">
+                    <i data-lucide="message-circle" class="w-5 h-5"></i>
+                </a>
             </div>
         </div>
     </footer>
@@ -438,102 +426,28 @@
             <button onclick="closeModal()" class="absolute top-4 right-4 p-2 rounded-full hover:bg-stone-100 text-stone-500 transition-colors">
                 <i data-lucide="x" class="w-5 h-5"></i>
             </button>
-
-            <div id="modalContent">
-                <!-- Injected via JavaScript -->
-            </div>
+            <div id="modalContent"></div>
         </div>
     </div>
 
     <script>
-        // Initialize Lucide icons
         lucide.createIcons();
 
-        // Product Catalog Data
         const products = {
-            1: {
-                title: "Lotus Pipe Cleaner Wall Hanging",
-                price: "₹499",
-                category: "Pipe Cleaner Art",
-                desc: "Vibrant red and pink handcrafted lotus flowers made of soft pipe cleaners with fluffy yellow centers, hung on a decorative wooden display string.",
-                spec: "Material: Plush Pipe Cleaners, Wood | Size: 12 inches",
-                image: "WhatsApp Image 2026-09-19 at 15.14.10 (1).jpeg"
-            },
-            2: {
-                title: "Customized Floral Resin Bookmark",
-                price: "₹299",
-                category: "Resin Art",
-                desc: "Handcrafted crystal clear bookmark with real embedded red rose petal, golden foil leaf, and customized vinyl typography (e.g. 'Prachi').",
-                spec: "Material: UV High-Gloss Resin | Size: 14cm x 3cm",
-                image: "WhatsApp Image 2026-09-19 at 13.29.44 (1).jpeg"
-            },
-            3: {
-                title: "Handmade Resin Personalized Rakhi",
-                price: "₹199",
-                category: "Festive Special",
-                desc: "Custom resin oval centerpiece with gold foil flakes, real mini dried blooms, set on a multi-strand pearl bead band.",
-                spec: "Material: Resin, Pearls, Gold Foil",
-                image: "WhatsApp Image 2026-09-19 at 13.29.45.jpeg"
-            },
-            4: {
-                title: "Custom Floral Resin Nameplate",
-                price: "₹1,499",
-                category: "Home Decor",
-                desc: "Personalized wooden base nameplate with purple-orange gradient resin art, real preserved blossoms, and 3D metallic gold text.",
-                spec: "Size: 12 x 6 inches | Weather resistant finish",
-                image: "WhatsApp Image 2026-09-19 at 13.29.46.jpeg"
-            },
-            5: {
-                title: "Pipe Cleaner Floral Bouquet",
-                price: "₹699",
-                category: "Pipe Cleaner Art",
-                desc: "Everlasting handcrafted flower bouquet wrapped in premium white floral paper with satin bow. Never fades!",
-                spec: "Includes 5 custom blooms (Roses, Daisies, Lavender)",
-                image: "WhatsApp Image 2026-09-19 at 13.29.47.jpeg"
-            },
-            6: {
-                title: "Chic Single Pipe Cleaner Tulip",
-                price: "₹189",
-                category: "Single Bloom",
-                desc: "A rich velvet dark red pipe cleaner tulip bloom wrapped in chic black matte cone packaging with gold metallic rim border.",
-                spec: "Height: 25cm",
-                image: "WhatsApp Image 2026-09-19 at 13.29.48.jpeg"
-            },
-            7: {
-                title: "Ocean Seashell Resin Photo Frame",
-                price: "₹899",
-                category: "Preservation Frame",
-                desc: "Scalloped ocean blue resin photo frame embedded with real seashells and pearls, displayed on an wooden easel stand.",
-                spec: "Fits 4x4 inch photograph",
-                image: "WhatsApp Image 2026-09-19 at 13.29.49.jpeg"
-            },
-            8: {
-                title: "Resin Decorative Pooja Thali",
-                price: "₹999",
-                category: "Festive Special",
-                desc: "White resin ritual plate with gold foil scalloped border, embedded metallic leaves, and two built-in brass bowls for kumkum & chawal.",
-                spec: "Diameter: 8 inches",
-                image: "WhatsApp Image 2026-09-19 at 13.29.49 (1).jpeg"
-            },
-            9: {
-                title: "Floral Resin Pearl Bracelet",
-                price: "₹349",
-                category: "Jewelry",
-                desc: "Clear floral resin medallion featuring a preserved real pink flower with double pearl strand bracelet band.",
-                spec: "Adjustable size strap",
-                image: "WhatsApp Image 2026-09-19 at 13.29.49 (2).jpeg"
-            },
-            10: {
-                title: "Embedded Yellow Daisy Bag Charm",
-                price: "₹249",
-                category: "Keychains",
-                desc: "Circular high-shine clear resin keychain with an embedded real yellow daisy flower, attached to a luxury gold keyring.",
-                spec: "Diameter: 4.5cm",
-                image: "WhatsApp Image 2026-09-19 at 13.29.50.jpeg"
-            }
+            1: { title: "Lotus Pipe Cleaner Wall Hanging", price: "₹499", category: "Pipe Cleaner Art", desc: "Vibrant red and pink handcrafted lotus flowers made of soft pipe cleaners with fluffy yellow centers, hung on a decorative wooden display string.", spec: "Material: Plush Pipe Cleaners, Wood | Size: 12 inches", image: "WhatsApp Image 2026-09-19 at 15.14.10 (1).jpeg" },
+            2: { title: "Customized Floral Resin Bookmark", price: "₹299", category: "Resin Art", desc: "Handcrafted crystal clear bookmark with real embedded red rose petal, golden foil leaf, and customized vinyl typography (e.g. 'Prachi').", spec: "Material: UV High-Gloss Resin | Size: 14cm x 3cm", image: "WhatsApp Image 2026-09-19 at 13.29.44 (1).jpeg" },
+            3: { title: "Handmade Resin Personalized Rakhi", price: "₹199", category: "Festive Special", desc: "Custom resin oval centerpiece with gold foil flakes, real mini dried blooms, set on a multi-strand pearl bead band.", spec: "Material: Resin, Pearls, Gold Foil", image: "WhatsApp Image 2026-09-19 at 13.29.45.jpeg" },
+            4: { title: "Custom Floral Resin Nameplate", price: "₹1,499", category: "Home Decor", desc: "Personalized wooden base nameplate with purple-orange gradient resin art, real preserved blossoms, and 3D metallic gold text.", spec: "Size: 12 x 6 inches | Weather resistant finish", image: "WhatsApp Image 2026-09-19 at 13.29.46.jpeg" },
+            5: { title: "Pipe Cleaner Floral Bouquet", price: "₹699", category: "Pipe Cleaner Art", desc: "Everlasting handcrafted flower bouquet wrapped in premium white floral paper with satin bow. Never fades!", spec: "Includes 5 custom blooms (Roses, Daisies, Lavender)", image: "WhatsApp Image 2026-09-19 at 13.29.47.jpeg" },
+            6: { title: "Chic Single Pipe Cleaner Tulip", price: "₹189", category: "Single Bloom", desc: "A rich velvet dark red pipe cleaner tulip bloom wrapped in chic black matte cone packaging with gold metallic rim border.", spec: "Height: 25cm", image: "WhatsApp Image 2026-09-19 at 13.29.48.jpeg" },
+            7: { title: "Ocean Seashell Resin Photo Frame", price: "₹899", category: "Preservation Frame", desc: "Scalloped ocean blue resin photo frame embedded with real seashells and pearls, displayed on an wooden easel stand.", spec: "Fits 4x4 inch photograph", image: "WhatsApp Image 2026-09-19 at 13.29.49.jpeg" },
+            8: { title: "Resin Decorative Pooja Thali", price: "₹999", category: "Festive Special", desc: "White resin ritual plate with gold foil scalloped border, embedded metallic leaves, and two built-in brass bowls for kumkum & chawal.", spec: "Diameter: 8 inches", image: "WhatsApp Image 2026-09-19 at 13.29.49 (1).jpeg" },
+            9: { title: "Floral Resin Pearl Bracelet", price: "₹349", category: "Jewelry", desc: "Clear floral resin medallion featuring a preserved real pink flower with double pearl strand bracelet band.", spec: "Adjustable size strap", image: "WhatsApp Image 2026-09-19 at 13.29.49 (2).jpeg" },
+            10: { title: "Embedded Yellow Daisy Bag Charm", price: "₹249", category: "Keychains", desc: "Circular high-shine clear resin keychain with an embedded real yellow daisy flower, attached to a luxury gold keyring.", spec: "Diameter: 4.5cm", image: "WhatsApp Image 2026-09-19 at 13.29.50.jpeg" }
         };
 
-        // Filter Products Function
+        const WHATSAPP_NUMBER = "919096837269";
+
         function filterCatalog(category) {
             const buttons = document.querySelectorAll('.filter-btn');
             buttons.forEach(btn => btn.classList.remove('bg-stone-900', 'text-white'));
@@ -549,7 +463,6 @@
             });
         }
 
-        // Open Modal Lightbox
         function openModal(id) {
             const item = products[id];
             const content = document.getElementById('modalContent');
@@ -563,7 +476,7 @@
                 </div>
                 <div class="flex items-center justify-between pt-4 border-t border-stone-100">
                     <span class="text-2xl font-bold text-stone-900">${item.price}</span>
-                    <a href="https://wa.me/919096837269?text=Hi!%20I'm%20interested%20in%20ordering%20${encodeURIComponent(item.title)}" target="_blank" class="px-5 py-2.5 rounded-full bg-emerald-600 hover:bg-emerald-700 text-white font-medium text-sm flex items-center gap-2">
+                    <a href="https://wa.me/${WHATSAPP_NUMBER}?text=Hi!%20I'm%20interested%20in%20ordering%20${encodeURIComponent(item.title)}" target="_blank" class="px-5 py-2.5 rounded-full bg-emerald-600 hover:bg-emerald-700 text-white font-medium text-sm flex items-center gap-2">
                         <i data-lucide="message-circle" class="w-4 h-4"></i> Order on WhatsApp
                     </a>
                 </div>
@@ -576,7 +489,6 @@
             document.getElementById('productModal').classList.add('hidden');
         }
 
-        // Quote Estimator Calculation
         function calculateEstimate() {
             const base = parseInt(document.getElementById('itemType').value) || 0;
             const gold = document.getElementById('addonGold').checked ? parseInt(document.getElementById('addonGold').value) : 0;
@@ -586,27 +498,18 @@
 
             const total = base + gold + name + box + card;
             document.getElementById('totalEstimate').innerText = '₹' + total.toLocaleString('en-IN');
-            document.getElementById('totalEstimate').classList.remove('pop');
-            void document.getElementById('totalEstimate').offsetWidth; // restart animation
-            document.getElementById('totalEstimate').classList.add('pop');
         }
-        // Send WhatsApp Quote Order
+
         function sendWhatsAppOrder() {
-            confetti({ particleCount: 80, spread: 70, origin: { y: 0.7 } });
-            const itemSelect = document.getElementById('itemType');
             const itemSelect = document.getElementById('itemType');
             const itemName = itemSelect.options[itemSelect.selectedIndex].getAttribute('data-name');
             const total = document.getElementById('totalEstimate').innerText;
-            const customText = document.getElementById('customText').value.trim();
+            const customText = document.getElementById('customText').value || "None";
 
-            let message = `Hi Just.SomeCreations! 👋 I'd like to place an order for:\n\n📌 Item: ${itemName}\n💰 Estimated Price: ${total}`;
-            if (customText) {
-                message += `\n✍️ Custom Name/Text: "${customText}"`;
-            }
+            const text = `Hi just.somecreations! 👋\nI'd like to place a custom order estimate:\n\n✨ Item: ${itemName}\n✏️ Custom Text: ${customText}\n💰 Estimated Total: ${total}\n\nPlease confirm availability!`;
 
-            window.open(`https://wa.me/919096837269?text=${encodeURIComponent(message)}`, '_blank');
+            window.location.href = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(text)}`;
         }
-    </script>
     </script>
 </body>
 </html>
